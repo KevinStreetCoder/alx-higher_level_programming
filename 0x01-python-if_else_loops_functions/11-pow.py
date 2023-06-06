@@ -1,7 +1,12 @@
 #!/usr/bin/python3
-
 def pow(a, b):
-	result = 1
-	for _ in range(b):
-		result *= a
-	return result
+    """computes a to the power of b.
+    
+    Arguments:
+        a {int} -- base value
+        b {int} -- exponential value
+    
+    Returns:
+        int -- computation of a^b
+    """
+    return a**b
