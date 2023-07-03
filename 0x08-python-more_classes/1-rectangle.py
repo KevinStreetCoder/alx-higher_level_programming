@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+    1-rectangle: class Rectangle
+"""
 
 class Rectangle:
     """
