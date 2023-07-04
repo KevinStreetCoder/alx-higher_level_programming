@@ -1,0 +1,32 @@
+#!/usr/bin/python3
+"""
+    Add_integer tests
+"""
+
+import doctest
+import unittest
+add_integer = __import__('0-add_integer').add_integer
+
+class TestAddInteger(unittest.TestCase):
+    """
+    Class to run tests for add_integer function
+    """
+    def test_add_integer(self):
+        """
+        Test add_integer function
+        """
+        # Test cases
+        self.assertEqual(add_integer(1, 2), 3)
+        self.assertEqual(add_integer(100, -2), 98)
+        self.assertEqual(add_integer(2), 100)
+        self.assertEqual(add_integer(100.3, -2), 98)
+        with self.assertRaises(Exception) as e:
+            add_integer(4, "School")
+        self.assertEqual(str(e.exception), "a must be an integer")
+        with self.assertRaises(Exception) as e:
+            add_integer(None)
+        self.assertEqual(str(e.exception), "a must be an integer")
+
+
+if __name__ == "__main__":
+    unittest.main()
