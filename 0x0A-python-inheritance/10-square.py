@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+    10-rectangle: class Rectangle from BaseGeomerty
+"""
 
 Rectangle = __import__('9-rectangle').Rectangle
 

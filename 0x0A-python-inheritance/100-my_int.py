@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+    100-my_int()
+"""
 class MyInt(int):
     """
     A class MyInt that inherits from int.
